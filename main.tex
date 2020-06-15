@@ -221,7 +221,7 @@ Now we define Reimannian metric which is the first fundamental form and  riemann
 \subsection{Curvature}
 \label{ss:1}
     
-For any $C^{2}$ path $\omega:(\alpha, \beta) \rightarrow \mathbb{R}^{2}$, Its derivative $w'$ is the velocity vector field  and the acceleration vector field is the second derivative  $w"$, assuming that w is an immersion (i.e. $ w' $ never vanishes) in the plane. Small infinitesimal element of the length of the arc is given $d s=\left|\omega^{\prime}(t)\right| d t$.
+For any $C^{2}$ path $\omega:(\alpha, \beta) \rightarrow \mathbb{R}^{2}$, Its derivative $w'$ is the velocity vector field  and the acceleration vector field is the second derivative  $w'$, assuming that w is an immersion (i.e. $ w' $ never vanishes) in the plane. Small infinitesimal element of the length of the arc is given $d s=\left|\omega^{\prime}(t)\right| d t$.
 \\Unit tangent vector field along $\omega$ is $\mathbf{T}(t)$ defined as \\
 
 \begin{equation}
@@ -239,7 +239,18 @@ and unit normal vector field $\mathbf{N}$ along $\omega$ is defined as
   \begin{equation}
   \label{eq3}  
     \frac{d \mathbf{T}}{d s}=\kappa \mathbf{N}
-\end{equation}  and similarly it turns out that \begin{equation}
+\end{equation}  
+
+from equation (\ref{eq3} ) we have
+$$ \frac{d \mathbf{T}}{d s} \cdot \mathbf{N} = \kappa $$
+$\mathbf{N}$ and $\mathbf{T}$ are perpendicular to each other so that $\mathbf{N} \cdot \mathbf{T} = 0 $
+ and on differentiating with respect to $s$ we get 
+   $$ \mathbf{N} \cdot \frac{d \mathbf{T}}{d s} + \mathbf{T} \cdot \frac{d \mathbf{N}}{d s} = 0 $$ 
+   so that we get
+   \hfill \break  
+   $$ \mathbf{T} \cdot \frac{d \mathbf{N}}{d s} = -  \mathbf{N} \cdot \frac{d \mathbf{T}}{d s} = -\kappa  $$ 
+   and hence finally get 
+\begin{equation}
 \label{eq4}  
     \frac{d \mathbf{N}}{d s}=-\kappa \mathbf{T}
 \end{equation}
@@ -254,10 +265,7 @@ every subset of a compact space is relatively compact since closed subsets of a 
 
 
 
-\begin{mydef} \label{d:2}
-$K$ and $L$ are said to be Homothetic, iff for some $x  \in \mathbb{R}^n,$ $K = \alpha L + x$ or $L=\alpha K+x $.\\
-Note that if one of $K, L $ is a point then $K $ and $L$ are homothetic.
-\end{mydef}
+
 
 
 
@@ -276,9 +284,9 @@ $
 \sum_{j=1}^{k} \lambda_{j} x_{j}
 $
 where the coefficients satisfy
-$$
-\sum_{j=1}^{k} \lambda_{j}=1, \quad \lambda_{j} \geq 0 \vee j
-$$
+\[
+\sum_{j=1}^{k} \lambda_{j}=1, \quad \lambda_{j} \geq 0 \hspace{5} \forall  \text{ j} 
+\]
 
 
 If $A$ is convex then any convex linear combination of elements
@@ -327,8 +335,8 @@ Note that if one of $K,L $ is a point then $K $ and $L$ are homothetic.
 
  \subsection{Convex Body}
  \label{ss:6}
-\textbf{Convex Body } in  $\mathbb{R}^n$  is a non empty compact convex sets with non-empty interior.\\
-e.g.Convex Polytope $\in \mathbb{R}^n$, Cube $[-1,1]^{n}$  in $ \mathbb{R}^n$, n- dimensional regular solid simplex (convex hull of $n+1$ equally spaced points 
+A Convex Body in  $\mathbb{R}^n$  is a non empty compact convex sets with non-empty interior.\\
+e.g.Convex Polytope $\in \mathbb{R}^n$, Cube $[-1,1]^{n}$  in $ \mathbb{R}^n$, n- dimensional regular solid simplex (convex hull of $n+1$ equally spaced points) 
 
 
 
@@ -337,7 +345,7 @@ e.g.Convex Polytope $\in \mathbb{R}^n$, Cube $[-1,1]^{n}$  in $ \mathbb{R}^n$, n
 
 \subsection{Affinely Independent}
 \label{ss:7}
- Points $ x_1, \ldots ,x_k \in \mathbb{R}^n $ are called \textbf{Affinely Independent} if vectors \par
+ Points $ x_1, \ldots ,x_k \in \mathbb{R}^n $ are called \textbf{Affinely Independent} if the following vectors \par
  $x_{2} - x_{1}, \ldots  x_{k} - x_{1} $ are linearly independent.
  
  \begin{itemize}
@@ -364,7 +372,7 @@ e.g.Convex Polytope $\in \mathbb{R}^n$, Cube $[-1,1]^{n}$  in $ \mathbb{R}^n$, n
  \label{ss:9}
  In general, the word “hyperplane” refers to an $\{n-1\}$ dimensional flat in $R^{n}$ \\
  Hyperplane is a subspace whose dimension is one less than that of it's ambient space  
- \\ it is preimage of a function from $\mathbb{R}^{n}$ to $\mathbb{R}$ i.e.
+ \\ it is preimage of a  linear function from $\mathbb{R}^{n}$ to $\mathbb{R}$ i.e.
  \begin{equation}
    H=\{v \in V: \alpha \cdot v=0\} 
   \end{equation}  
@@ -385,7 +393,7 @@ and $B .$\\
 
 
 \begin{mydef} \label{d:3}
-Let $A$ be a subset of $R^{n}$ which is closed and convex. We say hyperplane \\ $H=\{f=\alpha\}$ is \textbf{supporting hyperplane} of $A$ at  $x \in H$  if $A \cap E \neq \emptyset$ and $A$ is contained in any of the two closed half-spaces $\{f \leq \alpha\}, \{f \geq \alpha\}$.
+Let $A$ be a subset of $R^{n}$ which is closed and convex. We say hyperplane  $H=\{f=\alpha\}$ is \textbf{supporting hyperplane} of $A$ at  $x \in H$  if $A \cap H \neq \emptyset$ and $A$ is contained in any of the two closed half-spaces $\{f \leq \alpha\}, \{f \geq \alpha\}$.
 \\
     Supporting half-space of $A$ is half-space which contains $A$ and is bounded by supporting hyperplane of $A$, and the set $A \cap H$ is called \textbf{Support Set} and any of it's point $x \in A \cap H$ is called supporting point.
 \end{mydef}
@@ -406,7 +414,7 @@ for the trimp redion fer Vn bing in be apporimatel
 \[
 \sqrt{\frac{n}{2 \pi e}}
 \]
-2) Total sarface arais $n v_{n}$
+2) Total sarface area is $n v_{n}$
 \[
 \text { B volupe of cone }=\frac{B \cdot 1}{n}
 \]
@@ -455,8 +463,8 @@ Suke Asea of $S^{n-1}$ cuill be $n v_{n}$
 \label{ss:10}
 
 
-A Hypersurface is a manifold of dimension $(n-1)$, which is embedded in an ambient space of dimension n, generally a Euclidean space.
-\\If M and N are differentiable manifolds such that $dim(M)-dim(N) = 1 $and if an immersion is defined as $f: N\rightarrow M$ then $f(N)$ is a hypersurface in M, here f is a differentiable mapping whose differential \textbf{df} is an injective mapping of the 
+Hypersurface is defined as following.
+\\If M and N are differentiable manifolds such that $dim(M)-dim(N) = 1 $ and if an immersion is defined as $f: N\rightarrow M$ then $f(N)$ is a hypersurface in M, here f is a differentiable mapping whose differential \textbf{df} is an injective mapping of the 
      tangent space $N_{x}$ of N to  tangent space $M_{f(x)}$ of M at $f(x)$.
     
 
@@ -468,8 +476,15 @@ $$
 \partial \mathbf{x} / \partial u^{1}, \ldots, \partial \mathbf{x} / \partial u^{n-1} 
 $$
 are linearly independent because  mapping $\mathbf{x}$ is of maximal rank, and these vectors span the tangent space to $\Gamma$ at every $x(u)$\\
+\begin{mydef} \label{d:2}
+$K$ and $L$ are said to be Homothetic, iff for some $x  \in \mathbb{R}^n,$ \\
+$$K = \alpha L + x \text{ or } L=\alpha K+x $$
+Note that if one of $K, L $ is a point then $K $ and $L$ are homothetic.
+\end{mydef}
 
-\subsection{Hawn-Banach Separation Theorem}
+
+
+\subsection{Hahn-Banach Separation Theorem}
 \label{ss:11}
  Can we always draw a line between Given two sets, $ A$ and $ B$ ?
   If $ A$ and $ B$ are convex, then we can draw a line between them. If they aren't, we could easily run into problems.
@@ -574,24 +589,16 @@ then
 
 
 
-
+\hfill \break
 
 We will be using above lemma to prove Hahn-Banach Extension theorem
-\newpage
 
-
-
-
-
-
-
-
-
+\hfill \break
 
 \begin{theorem}(\textbf{Hahn-Banach Separation Theorem})
 \label{t:0.1}
 
-\hfill \breakr
+\hfill \break
 let $X$ be a toplogical vector space, $A$ and $B$ are disjoint, convex, nonempty supsets 
 of $X$ where  $A$ is open then $ \exists f \in X^{*}$, \alpha $\in \mathbb{R}$ such that
 $\forall x \in A, \forall y \in B$
@@ -628,7 +635,7 @@ $|v|^{2} \leq|v+t(n-v)|^{2}=|v|^{2}+2 t\langle v, n-v\rangle +t^{2}|n-v|^{2}$ \\
 
 \\
 
-$$0 \leq 2\langle v, n\rangle-2|v|^{2}+t|n-v|^{2}$$
+$$ 0 \leq 2\langle v, n\rangle-2|v|^{2}+t|n-v|^{2}$$
 
 and now let $t \rightarrow 0$
 then
@@ -648,7 +655,7 @@ $$\langle x, v\rangle-|v|^{2} \geqslant\langle y, v\rangle\right.$$
 if for any $y \in B $
 above inequality is valid so on taking supremum over y in the right side it will remain valid also.
 $$\langle x, v\rangle-|v|^{2} \geqslant \sup_{y \in B}\langle y, v\rangle$$
-\newpage
+
 So we have
 $$
 \langle x, v \rangle \geqslant\sup_{y\in B}\langle y, v\rangle+|v|^{2}
@@ -770,7 +777,7 @@ Hence Done
 \section{\textbf{Isoperimetric Inequality in the Plane($\mathbb{R}^{2}$)}}
 \label{s:2}
  In $\mathbb{R}$, Discrete measure of boundary of any bounded open subset of the line is greater than or equal to 2, and equal to 2 when given bounded open subset is just an open interval.\\
-  In $\mathbb{R}^{2}$ Isoperimetric problem is to finding the domain which contains the greatest area on considering  all bounded domains with fixed given perimeter. For $\mathbb{R}^{2}$ it is disk . 
+  In $\mathbb{R}^{2}$ Isoperimetric Inequality relates volume ad area of a domain. Disk turns out to be solution of Isoperimetric Problem in $\mathbb{R}^{2}$   
 
     If the area of the domain is A and length of it's boundary is L then using values of perimeter and area of the disk,
     as an analytical inequality, it can be written as \\\\
@@ -786,10 +793,10 @@ Hence Done
        \label{eq6}  
              \frac{A(\partial \Omega)}{V(\Omega)^{1-1 / n}} \geq \frac{A\left(S^{n-1}\right)}{V\left(\mathbb{B}^{n}\right)^{1-1 / n}}
           \end{equation} \\\\
-        where $\Omega$ is any bounded domain in $\mathbb{R}^{n}$ and $\partial \Omega$ it's boundary, $V$ denotes $(n-1)$
+        where $\Omega$ is any bounded domain in $\mathbb{R}^{n}$ and $\partial \Omega$ it's boundary, $V$ denotes $(n) $
 measure and $A$ denotes $(n-1)$ -measure, $B^{n}$ is the unit disk in $R^{n},$ and $S^{n-1}$,
 the unit sphere in $R^{n}$.
-Let $\omega_{n}$ denote the $(n-1)$ -dimensional volume of $B^{n}$ and  $c_{n-1}$ the $(n-1)$ -dimensional surface area of $S^{n-1}$ \\\\
+Let $\omega_{n}$ denote the $(n)$ -dimensional volume of $B^{n}$ and  $c_{n-1}$ the $(n-1)$ -dimensional surface area of $S^{n-1}$ \\\\
 
 
 
@@ -798,12 +805,16 @@ We have standard result of $\omega_{n}$ and $c_{n-1}$ for $\mathbb{R}^{n}$ as  \
     \label{eq7}  
 \mathbf{c}_{\mathbf{n}-1} = \frac{2 \pi^{n / 2}}{\Gamma(n / 2)}
     \end{equation}
-    \\\\
+
+
+\\\\
+
         \begin{equation}
         \label{eq8}  
  \omega_{\mathbf{n} } = \frac{\mathbf{c}_{\mathbf{n}-1}}{n}  
     \end{equation} \\
-that gives us \\
+    where $\Gamma$ is standard gamma function. Together (\ref{eq6}) and 
+(\ref{eq7}) give us \\
     \begin{equation}
     \label{eq9}  
  \frac{A(\partial \Omega)}{V(\Omega)^{1-1 / n}} \geq n \omega_{\mathbf{n}}^{1 / n}
@@ -839,7 +850,7 @@ consider a 1 -parameter family $\Gamma_{\epsilon}: \mathbf{S}^{2} \rightarrow \m
 $$
 v:\left(-\epsilon_{0}, \epsilon_{0}\right) \times \mathbf{S}^{1} \rightarrow \mathbb{R}^{2}
 $$ \\
-such that the  $v(\epsilon, t)$ is given by \\
+such that  $v(\epsilon, t)$ is given by \\
     \begin{equation}
     \label{eq10}  
 v(\epsilon, t)=\Gamma_{\varepsilon}(t)=\Gamma(t)+\Psi(\epsilon, t) \nu(t), \quad \Psi(0, t)=0
@@ -910,13 +921,13 @@ $$
 
 \begin{proof}
 
- Let $x=x^{1} e_{1}+x^{2} e_{2}$ be the vector field on $R^{2}$ with base point $\textbf{x}=\left(x^{1}, x^{2}\right) .$
+ Let $x=x^{1} e_{1}+x^{2} e_{2}$ be a vector field on $R^{2}$ with base point $\textbf{x}=\left(x^{1}, x^{2}\right) .$
 We have 2-dimensional divergence theorem for any vector
 field $\textbf{x} \mapsto \xi(\textbf{x}) \in \mathbb{R}^{2}$ with support containing cl $\Omega$.
 \\\\
     \begin{equation}
     \label{eq15}  
-\int_{\Omega} \operatorname{div} \boldsymbol{\xi} d A=\int_{a \Omega} \boldsymbol{\xi} \cdot \nu d s 
+\int_{\Omega} \operatorname{div} \boldsymbol{\xi} d A=\int_{\partial \Omega} \boldsymbol{\xi} \cdot \nu d s 
   \end{equation} \\
   
 where $\nu$ denote outward unit normal vector along $\partial\Omega$. \\
@@ -1010,7 +1021,7 @@ and for this it's \textbf{Reimannian Divergence} is given by \\\\
       
         \begin{equation}
         \label{eq20}  
-      \operatorname{div}_{\mathrm{r}} \zeta=\frac{1}{\sqrt{g}} \sum_{j=1}^{n-1} \frac{\partial\left(\zeta^{j} \sqrt{\boldsymbol{g}}\right)}{\partial \boldsymbol{u}^{j}}
+     \int_{\Lambda} \operatorname{div}_{\Gamma} \zeta d V_{n-1}=\int_{\partial \Lambda} \zeta \cdot \nu d V_{n-2}
         \end{equation}
       
       
@@ -1761,7 +1772,7 @@ for convex  $f: \mathbb{R}^{n} \rightarrow(-\infty, \infty]$   cl epi $f$ is the
  On int dom $f$, convex function $f: \mathbb{R}^{n} \rightarrow(-\infty, \infty]$ is continuous and on compact subsets of int dom $f$,it is Lipschitz continuous 	
 
 \end{theorem}	
-\newpage	
+	
 Now we examine differentiability characteristics of convex functions	
 \begin{theorem}	
 \label{t:7.9}
@@ -1918,7 +1929,7 @@ A^{(n)}(P):=\left\{\begin{array}{ccc}
 \end{equation}
 Recall that here $h_{P}(u)$ is the support function of P at point u. \\
  When $\operatorname{dim} P=n-1, $ P is like a hyperplane of dimension $n - 1$  and hence there are only two support sets for $P$ which are it's facets, $P=P\left(u_{0}\right)$ and $P=$ $P\left(-u_{0}\right),$ where $u_{0}$ is a normal vector to $P .$ In that case we have $$V^{(n-1)}\left(P\left(u_{0}\right) | u_{0}^{\perp}\right)=V^{(n-1)}\left(P\left(-u_{0}\right) | u_{0}^{\perp}\right)$$
- \newpage
+
 and from the  definition of support function, we have $h_{P}\left(u_{0}\right)=-h_{P}\left(-u_{0}\right)$,\\ so we find $V(P)=0,$ which matches to lebesgue measure result also  and 
  
  \begin{equation}
@@ -1966,7 +1977,7 @@ We can assume that $0 \in \text{rel int} K$ as  $V_{-}(K), V_{+}(K), F_{-}(K)$ a
  and from 2nd part of theorem 4.1.5,
 for $\varepsilon>0,$ we can find a polytope P such that 
 $$P \subset K \subset(1+\varepsilon) P .$$
-\newpage
+
 and then from above property \ref{prop:5} we have \\ 
 \[
 V(P) \leq V_{-}(K) \leq V_{+}(K) \leq V((1+\varepsilon) P)=(1+\varepsilon)^{n} V(P)
@@ -2013,7 +2024,7 @@ We can also define $A(K)$ for $K \in \mathcal{K}^n$ in an alternative way in ter
 A(K)=\lim _{\varepsilon \searrow 0} \frac{1}{\varepsilon}(V(K+B(\varepsilon))-V(K))
 \end{equation}
 \end{mydef}
-\newpage
+
 
 \subsection{Comparing Convex Bodies with Ball}\label{ss:20}
 Convex Body  in  $\mathbb{R}^n$  is a non empty compact convex sets with non-empty interior.\\
@@ -2229,12 +2240,12 @@ with equality iff $J, K$ are translates of each other.
 \[
 \langle c, u\rangle=\frac{1}{V(M)} \int_{S}\langle x, u\rangle d x
 \]
-for all $u \in S^{n-1} .$ \newpage
+for all $u \in S^{n-1} .$ 
 By translating  $J$ and $K$ we can have their centre of gravity at 0 as the Volume is translation invariant,the equality case then just reduces to claim hat $K=L$
 \hfill \break
 Now by induction on $n$, We prove  BRUNN-MINKOWSKI Theorem 
 \hfill \break
-For $n=1$, 1 - dimensional volume is linear so Brunn-Minkowski inequality easily follows 
+For $n=1$, 1 - dimensional volume is linear so Brunn-Minkowski inequality easily follows   
 \hfill \break 
 Along with above conclusion we also get that equality corresponds to the fact that two convex bodies (which are compact intervals in $\mathbb{R}$), in $\mathbb{R}$  are homothetic.
 \hfill \break 
