@@ -57,7 +57,7 @@
 			
 			\textit{A dissertation submitted for the partial fulfillment of BS-MS dual degree in Science}          
 			\vspace{0.9cm}
-			\includegraphics[width=0.4\textwidth]{iiser logo.png}        
+%			\includegraphics[width=0.4\textwidth]{iiser logo.png}        
 			
 			\Large
 			Department of Mathematical Sciences\\
@@ -1214,527 +1214,527 @@
 	$ \mathbb{R}^n$.  
 	\\
 	
-	 Riemannian metric of $\Gamma$ is given
-		locally by the positive definite matrix $G(u),$ where 
+	Riemannian metric of $\Gamma$ is given
+	locally by the positive definite matrix $G(u),$ where 
+	\begin{equation}
+	\label{eq17}  
+	G=\left(g_{j k}\right), \quad g_{j k}=\frac{\partial \boldsymbol{f}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k} }, \quad j, k=1, \ldots, n-1.     \end{equation}
+	
+	It is also called \textbf{First Fundamental Form.} \\\\
+	We use these Notation. 
+	\[ G^{-1}=\left(g^{j k}\right),   g=\operatorname{det}{G} \] 
+	
+	
+	And the associated surface area on  
+	$\Gamma$ is given locally by 
+	
+	\begin{equation}
+	\label{eq18}  
+	d A=\sqrt{g} d x^{1} \cdots dx^{n-1}. 
+	\end{equation}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\subsection{Riemannian Divergence}
+	\label{ss:13}
+	Let $\Gamma$ is a $C^{2}$ Hypersurface in $\mathbf{R}^{n}$ (so that Riemannian metric G is $C^1$). \\
+	For any tangent vector field $\boldsymbol{\xi}$ along $\Gamma$, we can write 
+	$$
+	\boldsymbol{\xi} = \sum_{j=1}^{n-1} \xi^{j} \frac{\partial \boldsymbol{f}}{\partial x^{j}}.
+	$$
+	and for this its \textbf{Riemannian Divergence} is given by  
+	\begin{equation}
+	\label{eq19}  
+	\operatorname{div}_{\mathrm{\Gamma}} \boldsymbol{\xi} = \frac{1}{\sqrt{g}}
+	\sum_{j=1}^{n-1} \frac{\partial (\xi^{j} \sqrt{g})}
+	{\partial {x}^{j}}  
+	\end{equation}
+	
+	
+	
+	
+	
+	For given any $(n-1)$ - dimensional domain $\Lambda \subset \Gamma$,  with $C^{1}$ boundary $\partial \Lambda,$ which is $(n-2)$ - dimension and unit normal exterior vector field $\nu$ along $\partial \Lambda$, \textbf{Riemannian divergence theorem} is 
+	
+	\begin{equation}
+	\label{eq20}  
+	\int_{\Lambda} \operatorname{div}_{\Gamma} \zeta d V_{n-1}=\int_{\partial \Lambda} \xi \cdot \nu d V_{n-2}
+	\end{equation}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\subsection{Second Fundamental Form}
+	\label{ss:14} Second Fundamental Form of $\Gamma$ in $\mathbb{R}^{n}$ is given locally by 
+	\begin{equation}
+	\label{eq21}  
+	\mathcal{B}=\left({b}_{j k}\right), \quad b_{j k}=\frac{\partial^{2} \boldsymbol{f}}{\partial {x}^{j} \partial {x}^{k}} \cdot \mathbf{n}, \quad j, k=1, \ldots, n-1 
+	\end{equation}
+	
+	$$b_{j k}=\frac{\partial^{2} \boldsymbol{f}}{\partial x^{j} \partial x^{k}} \cdot \mathbf{n}=\frac{\partial}{\partial x^{j}}\left(\mathbf{n} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}}\right)-\frac{\partial \mathbf{n}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}} =-\frac{\partial \mathbf{n}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}}$$ \\
+	as $\boldsymbol{n}$ is exterior normal vector field and
+	$\frac{\partial \boldsymbol{f}}{\partial x} $ is basis of tangent space so that 
+	$$\frac{\partial \boldsymbol{f}}{\partial x} \perp \boldsymbol{n} $$ 
+	and hence it can also be written as 
+	\begin{equation}
+	\label{eq22}  
+	b_{j k} = -\frac{\partial \mathbf{n}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}}         \end{equation} 
+	
+	
+	
+	The \textbf{Mean Curvature} $H$ of $\Gamma$ in $\mathbb{R}^{n}$ is the trace of  matrix $ G^{-1} \mathcal{B}$,  which is the trace of $\mathcal{B}$ relative
+	to $G,$ 
+	$$
+	\boldsymbol{H}=\operatorname{tr} G^{-1} \mathcal{B} $$
+	and \textbf{Gauss-Kronekar Curvature} is given by $$\boldsymbol{K}=\operatorname{det} {G}^{-1} \mathcal{B}$$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{theorem}
+		(\textbf{First variation of Volume and Area.})
+		\label{t:3}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$, with $C^{2}$ boundary $\Gamma$. Given
+		any $C^{2}$ time-dependent vector field $X: \mathbf{R}^{n} \times \mathbb{R} \rightarrow \mathbb{R}^{n}$ on $\mathbf{R}^{n},$ let $\Phi_{t}: \mathbf{R}^{n} \rightarrow \mathbb{R}^{n}$
+		denote the 1-parameter flow determined by $X\\ \Phi_{t}$ and $X$ are related by $$\frac{d}{d t} \Phi_{t}(x)=X(x, t), \quad \Phi_{0}=\mathrm{id.}$$
+		and $$\xi(x)=X(x, 0), \quad \eta=\xi | \Gamma$$
+		Then 
+		
+		
 		\begin{equation}
-		\label{eq17}  
-		G=\left(g_{j k}\right), \quad g_{j k}=\frac{\partial \boldsymbol{f}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k} }, \quad j, k=1, \ldots, n-1.     \end{equation}
-		
-		It is also called \textbf{First Fundamental Form.} \\\\
-		We use these Notation. 
-		\[ G^{-1}=\left(g^{j k}\right),   g=\operatorname{det}{G} \] 
+		\label{eq23}
+		{\textbf{(i)}}\ \left.\frac{d}{d t} \mathbf{V}\left(\Phi_{t}(\Omega)\right)\right|_{t=0}=\iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n}=\int_{\Gamma} \boldsymbol{\eta} \cdot \mathbf{n} d A
+		\end{equation}    
+		\\
 		
 		
-		And the associated surface area on  
-		$\Gamma$ is given locally by 
+		
+		
+		
+		
 		
 		\begin{equation}
-		\label{eq18}  
-		d A=\sqrt{g} d x^{1} \cdots dx^{n-1}. 
+		\label{eq24}
+		{\textbf{(ii)}}\  \left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)\right|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{\Gamma} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}=-\int_{\Gamma} H \boldsymbol{\eta} \cdot \mathbf{n} d \boldsymbol{A}
 		\end{equation}
 		
 		
 		
+		Where n is chosen to exterior normal vector field and ${\eta}^{T}$ is tangential part of  $\eta$.\\\\
 		
 		
-		
-		
-		
-		
-		
-		\subsection{Riemannian Divergence}
-		\label{ss:13}
-		Let $\Gamma$ is a $C^{2}$ Hypersurface in $\mathbf{R}^{n}$ (so that Riemannian metric G is $C^1$). \\
-		For any tangent vector field $\boldsymbol{\xi}$ along $\Gamma$, we can write 
-		$$
-		\boldsymbol{\xi} = \sum_{j=1}^{n-1} \xi^{j} \frac{\partial \boldsymbol{f}}{\partial x^{j}}.
-		$$
-		and for this its \textbf{Riemannian Divergence} is given by  
-		\begin{equation}
-		\label{eq19}  
-		\operatorname{div}_{\mathrm{\Gamma}} \boldsymbol{\xi} = \frac{1}{\sqrt{g}}
-		\sum_{j=1}^{n-1} \frac{\partial (\xi^{j} \sqrt{g})}
-		{\partial {x}^{j}}  
-		\end{equation}
-		
-		
-		
-		
-		
-		For given any $(n-1)$ - dimensional domain $\Lambda \subset \Gamma$,  with $C^{1}$ boundary $\partial \Lambda,$ which is $(n-2)$ - dimension and unit normal exterior vector field $\nu$ along $\partial \Lambda$, \textbf{Riemannian divergence theorem} is 
-		
-		\begin{equation}
-		\label{eq20}  
-		\int_{\Lambda} \operatorname{div}_{\Gamma} \zeta d V_{n-1}=\int_{\partial \Lambda} \xi \cdot \nu d V_{n-2}
-		\end{equation}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		\subsection{Second Fundamental Form}
-		\label{ss:14} Second Fundamental Form of $\Gamma$ in $\mathbb{R}^{n}$ is given locally by 
-		\begin{equation}
-		\label{eq21}  
-		\mathcal{B}=\left({b}_{j k}\right), \quad b_{j k}=\frac{\partial^{2} \boldsymbol{f}}{\partial {x}^{j} \partial {x}^{k}} \cdot \mathbf{n}, \quad j, k=1, \ldots, n-1 
-		\end{equation}
-		
-		$$b_{j k}=\frac{\partial^{2} \boldsymbol{f}}{\partial x^{j} \partial x^{k}} \cdot \mathbf{n}=\frac{\partial}{\partial x^{j}}\left(\mathbf{n} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}}\right)-\frac{\partial \mathbf{n}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}} =-\frac{\partial \mathbf{n}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}}$$ \\
-		as $\boldsymbol{n}$ is exterior normal vector field and
-		$\frac{\partial \boldsymbol{f}}{\partial x} $ is basis of tangent space so that 
-		$$\frac{\partial \boldsymbol{f}}{\partial x} \perp \boldsymbol{n} $$ 
-		and hence it can also be written as 
-		\begin{equation}
-		\label{eq22}  
-		b_{j k} = -\frac{\partial \mathbf{n}}{\partial x^{j}} \cdot \frac{\partial \boldsymbol{f}}{\partial x^{k}}         \end{equation} 
-		
-		
-		
-		The \textbf{Mean Curvature} $H$ of $\Gamma$ in $\mathbb{R}^{n}$ is the trace of  matrix $ G^{-1} \mathcal{B}$,  which is the trace of $\mathcal{B}$ relative
-		to $G,$ 
-		$$
-		\boldsymbol{H}=\operatorname{tr} G^{-1} \mathcal{B} $$
-		and \textbf{Gauss-Kronekar Curvature} is given by $$\boldsymbol{K}=\operatorname{det} {G}^{-1} \mathcal{B}$$
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		\begin{theorem}
-			(\textbf{First variation of Volume and Area.})
-			\label{t:3}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$, with $C^{2}$ boundary $\Gamma$. Given
-			any $C^{2}$ time-dependent vector field $X: \mathbf{R}^{n} \times \mathbb{R} \rightarrow \mathbb{R}^{n}$ on $\mathbf{R}^{n},$ let $\Phi_{t}: \mathbf{R}^{n} \rightarrow \mathbb{R}^{n}$
-			denote the 1-parameter flow determined by $X\\ \Phi_{t}$ and $X$ are related by $$\frac{d}{d t} \Phi_{t}(x)=X(x, t), \quad \Phi_{0}=\mathrm{id.}$$
-			and $$\xi(x)=X(x, 0), \quad \eta=\xi | \Gamma$$
-			Then 
+		\begin{proof}: \textbf{(i)}  \\
+			If $J_{\phi}$, denotes the Jacobian marrix of $\Phi_{t}$.Then we have \\
 			
 			
 			\begin{equation}
-			\label{eq23}
-			{\textbf{(i)}}\ \left.\frac{d}{d t} \mathbf{V}\left(\Phi_{t}(\Omega)\right)\right|_{t=0}=\iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n}=\int_{\Gamma} \boldsymbol{\eta} \cdot \mathbf{n} d A
-			\end{equation}    
-			\\
+			\label{eq25}
+			V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega} \operatorname{det} J_{\phi}(x) d v_{n}(x)
+			\end{equation} 
 			
+			so we have 
 			
-			
-			
-			
-			
-			
-			\begin{equation}
-			\label{eq24}
-			{\textbf{(ii)}}\  \left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)\right|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{\Gamma} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}=-\int_{\Gamma} H \boldsymbol{\eta} \cdot \mathbf{n} d \boldsymbol{A}
-			\end{equation}
-			
-			
-			
-			Where n is chosen to exterior normal vector field and ${\eta}^{T}$ is tangential part of  $\eta$.\\\\
-			
-			
-			\begin{proof}: \textbf{(i)}  \\
-				If $J_{\phi}$, denotes the Jacobian marrix of $\Phi_{t}$.Then we have \\
-				
-				
-				\begin{equation}
-				\label{eq25}
-				V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega} \operatorname{det} J_{\phi}(x) d v_{n}(x)
-				\end{equation} 
-				
-				so we have 
-				
-				\begin{equation} 
-				\label{eq25.5}
-				\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega}\left(\frac{d}{d t} \operatorname{det} J_{\phi}(x)\right) d v_{n}(x)
-				\end{equation}
-				\\\\
-				For any differentiable
-				matrix function $t \mapsto \mathcal{A}(t),$ where $\mathcal{A}(t)$ is nonsingular we have \\\\
-				\begin{equation}
-				\label{eq26}
-				\frac{d}{d t} \operatorname{det} \mathcal{A}=\operatorname{det} \mathcal{A} \cdot \operatorname{tr}\left(\mathcal{A}^{-1} \frac{d \mathcal{A}}{d t}\right)
-				\end{equation}
-				Therefore \\\\
-				$$\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega}\left(\operatorname{det} J_{\phi_{t}}\right) \cdot \operatorname{tr}\left(J_{\phi_{t}^{-1}}\frac{d}{d t} J_{\phi_{t}}\right) d v_{n}(x)$$
-				\\
-				Now  $J_{\phi_{t}}$ is Jacobian matrix so \\\\
-				\begin{equation}
-				\label{eq27}
-				\left(J_{\phi_{t}}\right)_{A}^{B}=\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}, \quad A, B=1, \ldots, n  
-				\end{equation} 
-				\\\\
-				and at $t = 0$ we have $\phi_{0}(x) = x$ or $\phi_{0}$ is identity so 
-				\\
-				
-				$$\left.\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}\right|_{t=0}=\delta_{A}^{B}$$ where $\delta$ is kronekar delta.\\\\ 
-				Furthermore \\
-				$$\frac{d}{d t}\left(J_{\phi}\right)_{A}^{B}=\frac{\partial}{\partial t} \frac{\partial \Phi_{t} B}{\partial x^{A}}=\frac{\partial}{\partial x^{A}} \frac{\partial \Phi_{t}^{B}}{\partial t}$$ \\
-				
-				
-				and at $t=0$, which implies 
-				\begin{center}
-					$$\left.\frac{d}{d t}\left(J_{\phi}\right)_{A}^{B}\right|_{t=0}=\frac{\partial \xi^{B}}{\partial x^{A}}$$ \\
-				\end{center}
-				
-				Since \\
-				$$\left.\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}\right|_{t=0}=\delta_{A}^{B} $$
-				\\
-				so  $J_{\phi_{t}} $ at $t = 0,$ is an Identity matrix and so its inverse, and  $\operatorname{det} J_{\phi_{0}} = 1$\\\\
-				So \\
-				\begin{equation}
-				\label{eq28}
-				\left.\frac{d}{d t} \mathbf{V}\left(\Phi_{t}(\Omega)\right)\right|_{t=0} = \iint_{\Omega}\operatorname{tr}\left(\frac{d}{d t} J_{\phi_{t}}\right) d v_{n}(x) = \iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n} \\\\
-				\end{equation} \\\\
-				Now using divergence theorem we get \\\\
-				\begin{equation}
-				\label{eq29}
-				\left.\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)\right|_{t=0}=\iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n}=\int_{\Gamma} \eta \cdot \mathbf{n} d A \\\\
-				\end{equation}
-				
-				
-				
-			\end{proof}
-			\begin{proof}
-				
-				
-				\textbf{: (ii)} 
-				\\
-				Assume the surface $\Gamma$ is given locally by $\mathbf{x}=\mathbf{x}(u)$, and take \\
-				$$
-				\mathbf{y}(u, t)=\Phi_{t}(\mathbf{x}(u))
-				$$
-				Denote $\phi = \eta\cdot{n}$ and the Riemannian metric on $\Phi_{t}(\Gamma)$ for each fixed $t$ by 
-				\begin{equation}
-				\label{eq30}
-				h_{j k}=\frac{\partial \mathbf{y}}{\partial u^{j}} \cdot \frac{\partial \mathbf{y}}{\partial u^{k}}, \quad j, k=1, \ldots, n-1
-				\end{equation} \\
-				On $\Gamma$ with  metric \textbf{G} and  $g=det(\textbf{G})$, associated surface area is given locally by 
-				
-				\begin{equation}
-				\label{eq31}
-				d A=\sqrt{g} d u^{1} \cdots d u^{n-1}
-				\end{equation} 
-				So we have \\
-				
-				$$
-				\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)=\int_{\Gamma} \frac{\partial}{\partial t} \sqrt{\operatorname{det}\left(h_{j k}\right)} d u^{1} \cdots d u^{n-1}$$ \\\\
-				In calculation of  derivative of $\sqrt{\operatorname{det}\left(h_{j k}\right)}$, set $\mathcal{H}=\left(h_{j k}\right), \mathcal{H}^{-1}=\left(h^{j k}\right) $ \\\\ then \\
-				$$
-				\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}=\frac{1}{2}\{\sqrt{\operatorname{det} \mathcal{H}}\}^{-1} \operatorname{det} \mathcal{H} \cdot\left(\operatorname{tr} \mathcal{H}^{-1} \frac{\partial \mathcal{H}}{\partial t}\right)=\frac{1}{2} \sqrt{\operatorname{det} \mathcal{H}} \sum_{j, k}{h}^{j k} \frac{\partial h_{\boldsymbol{k} j}}{\partial t}$$  \\
-				using 
-				$$\frac{d}{d t} \operatorname{det} \mathcal{H}=\operatorname{det} \mathcal{H} \cdot \operatorname{tr}\left(\mathcal{H}^{-1} \frac{d \mathcal{H}}{d t}\right) $$.  
-				\\\\
-				Now putting  $h_{k j}=\frac{\partial \mathbf{y}}{\partial u^{k}} \cdot \frac{\partial \mathbf{y}}{\partial u^{j}}$ 
-				We get \\
-				
-				
-				$$\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}=\sqrt{\operatorname{det} \mathcal{H}} \sum_{j, \boldsymbol{k}} \boldsymbol{h}^{j k} \frac{\partial \mathbf{y}}{\partial \boldsymbol{u}^{k}} \cdot \frac{\partial}{\partial \boldsymbol{u}^{j}} \frac{\partial \mathbf{y}}{\partial t}$$  \\
-				
-				At t=0 ,  for  $\eta(u)=(\partial \mathbf{y} / \partial t)(u, 0)$, Along $\Gamma$, We can write \\
-				
-				\begin{equation}
-				\label{eq32}  \eta=\sum_{\ell=1}^{n-1} \eta^{\ell} \frac{\partial \mathbf{x}}{\partial u^{\ell}}+\phi \mathbf{n} 
-				\end{equation}
-				\\
-				where 
-				$\phi = \eta\cdot{n}$, for t=0, $\mathbf{y}(u, 0)=\mathbf{x}(u)$ so $\mathcal{H}=G$ hence we have\\\\ 
-				$$\left.\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}\right|_{t=0}=\sqrt{\operatorname{det} G} \sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \eta}{\partial u^{j}}$$ and \\\\
-				$$\frac{\partial \boldsymbol{\eta}}{\partial \boldsymbol{u}^{j}}=\sum_{\ell=1}^{n-1}\left\{\frac{\partial \eta^{\ell}}{\partial \boldsymbol{u}^{j}} \frac{\partial \mathbf{x}}{\partial \boldsymbol{u}^{\ell}}+\eta^{\ell} \frac{\partial^{2} \mathbf{x}}{\partial \boldsymbol{u}^{j} \partial \boldsymbol{u}^{\ell}}\right\}+\frac{\partial \boldsymbol{\phi}}{\partial \boldsymbol{u}^{j}} \mathbf{n}+\boldsymbol{\phi} \frac{\partial \mathbf{n}}{\partial \boldsymbol{u}^{j}}$$ \\\\
-				
-				So since $\mathbf{n}$ is perpendicular to $\partial \mathbf{x} / \partial u^{k}$ for all $k=1, \ldots, n-1$
-				\\\\
-				$$\sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \eta}{\partial u^{j}}=\sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot\left(\sum_{\ell=1}^{n-1}\left\{\frac{\partial \eta^{\ell}}
-				{\partial u^{j}} \frac{\partial \mathbf{x}}{\partial u^{\ell}}+\eta^{\ell} \frac{\partial^{2} \mathbf{x}}{\partial u^{\ell} \partial u^{j}}\right\}+\phi \frac{\partial \mathbf{n}}{\partial u^{j}}\right)$$ \\\\
-				$${=\sum_{j, k, \ell} g^{j k} g_{k \ell} \frac{\partial \eta^{\ell}}{\partial u^{j}}+\sum_{j, k, \ell} g^{j k} \eta^{\ell}
-					\frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial^{2} \mathbf{x}}{\partial {u}^{\ell} \partial {u}^{j}}
-					+\sum_{j, k} \phi g^{j k} \frac{\partial \mathbf{x}}{\partial{u}^{k}} \cdot \frac{\partial \mathbf{n}}{\partial{u}^{j}}} $$
-				\\\\
-				$${=\sum_{j} \frac{\partial \eta^{j}}{\partial{u}^{j}}+\sum_{j} \eta^{j} \frac{1}{2} \mathbf{tr}\left({G}^{-1} \frac{\partial G}{\partial {u}^{j}}\right)+\sum_{j, k} \phi{g}^{j k} \frac{\partial \mathbf{x}}{\partial {u}^{k}} \cdot \frac{\partial \mathbf{n}}{\partial{u}^{j}}}$$  \\\\
-				$$=\sum_{j} \frac{1}{\sqrt{g}} \frac{\partial\left(\eta^{j} \sqrt{g}\right)}{\partial u^{j}}+\sum_{j, k} \phi g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \mathbf{n}}{\partial u^{j}}$$ \\\\
-				
-				
-				
-				
-				$$
-				{=\operatorname{div}_{\mathbf{\Gamma}} {\eta}^{T}-{\phi}{H}}
-				$$
-				
-				So we have \\
-				$$
-				\left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)\right|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{r} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}
-				$$ \\
-				
-				
-				
-				
-				Now since $\Gamma$ is closed and has no boundary Therefore, $$\int_{\Gamma}div_{\Gamma}\eta^{T}d\textbf{A} = 0$$
-				so \\\\
-				\begin{equation}
-				\label{eq33}
-				\left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{r} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}= -\int_{\Gamma}H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}   \\\\
-				\end{equation}
-			\end{proof}
-		\end{theorem}
-		
-		
-		
-		
-		
-		
-		\begin{theorem}
-			\label{t:3.5}
-			Let $\Omega $ be a bounded domain in $ \mathbb{R}^n$ whose boundary, $\Gamma$ is $C^{2}$ and assume that     mean curvature of $\Gamma$ is constant then $\Omega$    will be an n - disk in  $ \mathbb{R}^n$.     
-			
-		\end{theorem}
-		
-		
-		
-		
-		
-		
-		
-		\subsection{$C^{k}$ Isoperimetric problem} 
-		\label{ss:15}
-		Let $\Omega$ be a bounded domain in $R^{n}$, with $C^{k}$ boundary, $k \geq 1 .$ We
-		say that $\Omega$ is a solution to the $C^{k}$ Isoperimetric problem if, for any domain $D$
-		with $C^{k}$ boundary and volume equal to that of $\Omega,$ we have $$A(\partial D) \geq A(\partial \Omega) .$$
-		\subsection{$C^{k}$ extremal of the Isoperimetric functional} 
-		We say that $\Omega$ is a
-		$C^{k}$ extremal of the Isoperimetric functional if, for any \\ 1 -parameter family of
-		$C^{k}$ diffeomorphism $\Phi_{t}: \mathbf{R}^{n} \rightarrow \mathbf{R}^{n}$ satisfying \par $V\left(\Phi_{t}(\Omega)\right)=V(\Omega)  \hspace{3pt}\forall \hspace{3pt} t$, we
-		have \\\\
-		\begin{equation}
-		\label{eq34}
-		\left.\frac{d}{d t} A\left(\Phi_{t}(\partial \Omega)\right)\right|_{t=0}=0
-		\end{equation}
-		\\\\
-		
-		
-		
-		
-		
-		
-		
-		\begin{theorem}
-			\label{t:4}
-			Assume that $\Omega$ is a solution to the $C^{2}$ Isoperimetric problem
-			with volume of $\Omega$ equal to that of the unit $(n)$ - disk in $\mathbb{R}^{n}$. Then the mean curvature
-			H of $\Gamma$ satisfies
-			$$
-			-H \leq n-1
-			$$
-			on all of $\Gamma$.
-		\end{theorem}
-		
-		\begin{proof}
-			
-			Consider the Isoperimetric functional \\\\
-			\begin{equation}
-			\label{eq35}
-			J(D)=\frac{A(\partial D)}{V(D)^{1-1 / n}}
+			\begin{equation} 
+			\label{eq25.5}
+			\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega}\left(\frac{d}{d t} \operatorname{det} J_{\phi}(x)\right) d v_{n}(x)
 			\end{equation}
 			\\\\
-			where D varies over bounded domains in $R^{n}$ having $C^{2}$ boundary.\\
-			Notations in this proof are used from the above theorem (\ref{t:3}) which are \\
-			following.
-			\\ 
-			We have $\phi_{t}$, 1-parameter family of diffeomorphism of $\mathbb{R}^{n}$, with corresponding time-dependent vector field $$\boldsymbol{X} = \boldsymbol{X}(x, t)$$ and at time zero, $\boldsymbol{X}$ is \\ $$\boldsymbol{\xi}(\boldsymbol{x})=\boldsymbol{X}(\boldsymbol{x}, \boldsymbol{0})$$ and  restricting $\boldsymbol{\xi}$ on its boundary, we have
-			\\      $$\boldsymbol{\eta}=\boldsymbol{\xi} | \Gamma $$ \\
-			As $\Omega$ is a solution to the  $C^{2}$ Isoperimetric problem, $\Omega$ will minimize the isoperimetric functional $J(D)$ so we have
-			
-			
-			$$\left.\frac{d}{d t} J\left(\Phi_{t}(\Omega)\right)\right|_{t=0} = 0 $$ \\ 
-			Now on differentiating $J(\Phi_{t}(\Omega))$ with respect to t,
-			we get \\\\
-			$$\left.\frac{d}{d t} J\left(\Phi_{t}(\Omega)\right)\right|_{t=0} =  -\frac{1}{V(\Omega)^{1-1 / n}} \int_{\Gamma} H \eta \cdot \mathbf{n} d A+\left(\frac{1}{n}-1\right) \frac{A(\Gamma)}{V(\Omega)^{2-1 / n}} \int_{\Gamma} \eta \cdot \mathbf{n} \hspace{6pt} d A 
-			$$ \\\\
-			which implies \\\\
+			For any differentiable
+			matrix function $t \mapsto \mathcal{A}(t),$ where $\mathcal{A}(t)$ is nonsingular we have \\\\
 			\begin{equation}
-			\label{eq35.5}
-			-\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d A}{\int_{\Gamma} \eta \cdot \mathbf{n} d A} = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}
+			\label{eq26}
+			\frac{d}{d t} \operatorname{det} \mathcal{A}=\operatorname{det} \mathcal{A} \cdot \operatorname{tr}\left(\mathcal{A}^{-1} \frac{d \mathcal{A}}{d t}\right)
+			\end{equation}
+			Therefore \\\\
+			$$\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)=\iint_{\Omega}\left(\operatorname{det} J_{\phi_{t}}\right) \cdot \operatorname{tr}\left(J_{\phi_{t}^{-1}}\frac{d}{d t} J_{\phi_{t}}\right) d v_{n}(x)$$
+			\\
+			Now  $J_{\phi_{t}}$ is Jacobian matrix so \\\\
+			\begin{equation}
+			\label{eq27}
+			\left(J_{\phi_{t}}\right)_{A}^{B}=\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}, \quad A, B=1, \ldots, n  
+			\end{equation} 
+			\\\\
+			and at $t = 0$ we have $\phi_{0}(x) = x$ or $\phi_{0}$ is identity so 
+			\\
+			
+			$$\left.\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}\right|_{t=0}=\delta_{A}^{B}$$ where $\delta$ is kronekar delta.\\\\ 
+			Furthermore \\
+			$$\frac{d}{d t}\left(J_{\phi}\right)_{A}^{B}=\frac{\partial}{\partial t} \frac{\partial \Phi_{t} B}{\partial x^{A}}=\frac{\partial}{\partial x^{A}} \frac{\partial \Phi_{t}^{B}}{\partial t}$$ \\
+			
+			
+			and at $t=0$, which implies 
+			\begin{center}
+				$$\left.\frac{d}{d t}\left(J_{\phi}\right)_{A}^{B}\right|_{t=0}=\frac{\partial \xi^{B}}{\partial x^{A}}$$ \\
+			\end{center}
+			
+			Since \\
+			$$\left.\frac{\partial \Phi_{t}^{B}}{\partial x^{A}}\right|_{t=0}=\delta_{A}^{B} $$
+			\\
+			so  $J_{\phi_{t}} $ at $t = 0,$ is an Identity matrix and so its inverse, and  $\operatorname{det} J_{\phi_{0}} = 1$\\\\
+			So \\
+			\begin{equation}
+			\label{eq28}
+			\left.\frac{d}{d t} \mathbf{V}\left(\Phi_{t}(\Omega)\right)\right|_{t=0} = \iint_{\Omega}\operatorname{tr}\left(\frac{d}{d t} J_{\phi_{t}}\right) d v_{n}(x) = \iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n} \\\\
+			\end{equation} \\\\
+			Now using divergence theorem we get \\\\
+			\begin{equation}
+			\label{eq29}
+			\left.\frac{d}{d t} V\left(\Phi_{t}(\Omega)\right)\right|_{t=0}=\iint_{\Omega} \operatorname{div} \xi d \mathbf{v}_{n}=\int_{\Gamma} \eta \cdot \mathbf{n} d A \\\\
 			\end{equation}
 			
-			Now $\Omega$ has its $V(\Omega) = \omega_{n}$, we should have $A(\Gamma) \leq c_{n-1}$ since $\Omega $ is solution of Isoperimetric Problem \\
-			recall that \\ $$ \omega_{\mathbf{n}}=\frac{\mathbf{c}_{\mathbf{n}-1}}{n}$$ \\
-			together  implies \\\\
-			\begin{equation}
-			\label{eq36}
-			-\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d \boldsymbol{A}}{\int_{\Gamma} \boldsymbol{\eta} \cdot \mathbf{n} d \boldsymbol{A}} \leq \boldsymbol{n}-1 
-			\end{equation}
-			let $\phi$ be a non-negative $C^{\infty}$ function for any $w_{0} \in \Gamma,$ compactly supported on a neighborhood of $w_{0}$ in $\mathbb{R}^{n}$.
-			To simplify the above expression, we choose a particular vector field $X(x, t)$  \\
+			
+			
+		\end{proof}
+		\begin{proof}
+			
+			
+			\textbf{: (ii)} 
+			\\
+			Assume the surface $\Gamma$ is given locally by $\mathbf{x}=\mathbf{x}(u)$, and take \\
 			$$
-			X(x, t)=\phi(x) \mathbf{n}_{\omega_{0}}
+			\mathbf{y}(u, t)=\Phi_{t}(\mathbf{x}(u))
+			$$
+			Denote $\phi = \eta\cdot{n}$ and the Riemannian metric on $\Phi_{t}(\Gamma)$ for each fixed $t$ by 
+			\begin{equation}
+			\label{eq30}
+			h_{j k}=\frac{\partial \mathbf{y}}{\partial u^{j}} \cdot \frac{\partial \mathbf{y}}{\partial u^{k}}, \quad j, k=1, \ldots, n-1
+			\end{equation} \\
+			On $\Gamma$ with  metric \textbf{G} and  $g=det(\textbf{G})$, associated surface area is given locally by 
+			
+			\begin{equation}
+			\label{eq31}
+			d A=\sqrt{g} d u^{1} \cdots d u^{n-1}
+			\end{equation} 
+			So we have \\
+			
+			$$
+			\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)=\int_{\Gamma} \frac{\partial}{\partial t} \sqrt{\operatorname{det}\left(h_{j k}\right)} d u^{1} \cdots d u^{n-1}$$ \\\\
+			In calculation of  derivative of $\sqrt{\operatorname{det}\left(h_{j k}\right)}$, set $\mathcal{H}=\left(h_{j k}\right), \mathcal{H}^{-1}=\left(h^{j k}\right) $ \\\\ then \\
+			$$
+			\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}=\frac{1}{2}\{\sqrt{\operatorname{det} \mathcal{H}}\}^{-1} \operatorname{det} \mathcal{H} \cdot\left(\operatorname{tr} \mathcal{H}^{-1} \frac{\partial \mathcal{H}}{\partial t}\right)=\frac{1}{2} \sqrt{\operatorname{det} \mathcal{H}} \sum_{j, k}{h}^{j k} \frac{\partial h_{\boldsymbol{k} j}}{\partial t}$$  \\
+			using 
+			$$\frac{d}{d t} \operatorname{det} \mathcal{H}=\operatorname{det} \mathcal{H} \cdot \operatorname{tr}\left(\mathcal{H}^{-1} \frac{d \mathcal{H}}{d t}\right) $$.  
+			\\\\
+			Now putting  $h_{k j}=\frac{\partial \mathbf{y}}{\partial u^{k}} \cdot \frac{\partial \mathbf{y}}{\partial u^{j}}$ 
+			We get \\
+			
+			
+			$$\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}=\sqrt{\operatorname{det} \mathcal{H}} \sum_{j, \boldsymbol{k}} \boldsymbol{h}^{j k} \frac{\partial \mathbf{y}}{\partial \boldsymbol{u}^{k}} \cdot \frac{\partial}{\partial \boldsymbol{u}^{j}} \frac{\partial \mathbf{y}}{\partial t}$$  \\
+			
+			At t=0 ,  for  $\eta(u)=(\partial \mathbf{y} / \partial t)(u, 0)$, Along $\Gamma$, We can write \\
+			
+			\begin{equation}
+			\label{eq32}  \eta=\sum_{\ell=1}^{n-1} \eta^{\ell} \frac{\partial \mathbf{x}}{\partial u^{\ell}}+\phi \mathbf{n} 
+			\end{equation}
+			\\
+			where 
+			$\phi = \eta\cdot{n}$, for t=0, $\mathbf{y}(u, 0)=\mathbf{x}(u)$ so $\mathcal{H}=G$ hence we have\\\\ 
+			$$\left.\frac{\partial}{\partial t} \sqrt{\operatorname{det} \mathcal{H}}\right|_{t=0}=\sqrt{\operatorname{det} G} \sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \eta}{\partial u^{j}}$$ and \\\\
+			$$\frac{\partial \boldsymbol{\eta}}{\partial \boldsymbol{u}^{j}}=\sum_{\ell=1}^{n-1}\left\{\frac{\partial \eta^{\ell}}{\partial \boldsymbol{u}^{j}} \frac{\partial \mathbf{x}}{\partial \boldsymbol{u}^{\ell}}+\eta^{\ell} \frac{\partial^{2} \mathbf{x}}{\partial \boldsymbol{u}^{j} \partial \boldsymbol{u}^{\ell}}\right\}+\frac{\partial \boldsymbol{\phi}}{\partial \boldsymbol{u}^{j}} \mathbf{n}+\boldsymbol{\phi} \frac{\partial \mathbf{n}}{\partial \boldsymbol{u}^{j}}$$ \\\\
+			
+			So since $\mathbf{n}$ is perpendicular to $\partial \mathbf{x} / \partial u^{k}$ for all $k=1, \ldots, n-1$
+			\\\\
+			$$\sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \eta}{\partial u^{j}}=\sum_{j, k} g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot\left(\sum_{\ell=1}^{n-1}\left\{\frac{\partial \eta^{\ell}}
+			{\partial u^{j}} \frac{\partial \mathbf{x}}{\partial u^{\ell}}+\eta^{\ell} \frac{\partial^{2} \mathbf{x}}{\partial u^{\ell} \partial u^{j}}\right\}+\phi \frac{\partial \mathbf{n}}{\partial u^{j}}\right)$$ \\\\
+			$${=\sum_{j, k, \ell} g^{j k} g_{k \ell} \frac{\partial \eta^{\ell}}{\partial u^{j}}+\sum_{j, k, \ell} g^{j k} \eta^{\ell}
+				\frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial^{2} \mathbf{x}}{\partial {u}^{\ell} \partial {u}^{j}}
+				+\sum_{j, k} \phi g^{j k} \frac{\partial \mathbf{x}}{\partial{u}^{k}} \cdot \frac{\partial \mathbf{n}}{\partial{u}^{j}}} $$
+			\\\\
+			$${=\sum_{j} \frac{\partial \eta^{j}}{\partial{u}^{j}}+\sum_{j} \eta^{j} \frac{1}{2} \mathbf{tr}\left({G}^{-1} \frac{\partial G}{\partial {u}^{j}}\right)+\sum_{j, k} \phi{g}^{j k} \frac{\partial \mathbf{x}}{\partial {u}^{k}} \cdot \frac{\partial \mathbf{n}}{\partial{u}^{j}}}$$  \\\\
+			$$=\sum_{j} \frac{1}{\sqrt{g}} \frac{\partial\left(\eta^{j} \sqrt{g}\right)}{\partial u^{j}}+\sum_{j, k} \phi g^{j k} \frac{\partial \mathbf{x}}{\partial u^{k}} \cdot \frac{\partial \mathbf{n}}{\partial u^{j}}$$ \\\\
+			
+			
+			
+			
+			$$
+			{=\operatorname{div}_{\mathbf{\Gamma}} {\eta}^{T}-{\phi}{H}}
+			$$
+			
+			So we have \\
+			$$
+			\left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)\right|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{r} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}
+			$$ \\
+			
+			
+			
+			
+			Now since $\Gamma$ is closed and has no boundary Therefore, $$\int_{\Gamma}div_{\Gamma}\eta^{T}d\textbf{A} = 0$$
+			so \\\\
+			\begin{equation}
+			\label{eq33}
+			\left.\frac{d}{d t} A\left(\Phi_{t}(\Gamma)\right)|_{t=0}=\int_{\Gamma}\left\{\operatorname{div}_{r} \boldsymbol{\eta}^{T}-H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}= -\int_{\Gamma}H \boldsymbol{\eta} \cdot \mathbf{n}\right\} d \boldsymbol{A}   \\\\
+			\end{equation}
+		\end{proof}
+	\end{theorem}
+	
+	
+	
+	
+	
+	
+	\begin{theorem}
+		\label{t:3.5}
+		Let $\Omega $ be a bounded domain in $ \mathbb{R}^n$ whose boundary, $\Gamma$ is $C^{2}$ and assume that     mean curvature of $\Gamma$ is constant then $\Omega$    will be an n - disk in  $ \mathbb{R}^n$.     
+		
+	\end{theorem}
+	
+	
+	
+	
+	
+	
+	
+	\subsection{$C^{k}$ Isoperimetric problem} 
+	\label{ss:15}
+	Let $\Omega$ be a bounded domain in $R^{n}$, with $C^{k}$ boundary, $k \geq 1 .$ We
+	say that $\Omega$ is a solution to the $C^{k}$ Isoperimetric problem if, for any domain $D$
+	with $C^{k}$ boundary and volume equal to that of $\Omega,$ we have $$A(\partial D) \geq A(\partial \Omega) .$$
+	\subsection{$C^{k}$ extremal of the Isoperimetric functional} 
+	We say that $\Omega$ is a
+	$C^{k}$ extremal of the Isoperimetric functional if, for any \\ 1 -parameter family of
+	$C^{k}$ diffeomorphism $\Phi_{t}: \mathbf{R}^{n} \rightarrow \mathbf{R}^{n}$ satisfying \par $V\left(\Phi_{t}(\Omega)\right)=V(\Omega)  \hspace{3pt}\forall \hspace{3pt} t$, we
+	have \\\\
+	\begin{equation}
+	\label{eq34}
+	\left.\frac{d}{d t} A\left(\Phi_{t}(\partial \Omega)\right)\right|_{t=0}=0
+	\end{equation}
+	\\\\
+	
+	
+	
+	
+	
+	
+	
+	\begin{theorem}
+		\label{t:4}
+		Assume that $\Omega$ is a solution to the $C^{2}$ Isoperimetric problem
+		with volume of $\Omega$ equal to that of the unit $(n)$ - disk in $\mathbb{R}^{n}$. Then the mean curvature
+		H of $\Gamma$ satisfies
+		$$
+		-H \leq n-1
+		$$
+		on all of $\Gamma$.
+	\end{theorem}
+	
+	\begin{proof}
+		
+		Consider the Isoperimetric functional \\\\
+		\begin{equation}
+		\label{eq35}
+		J(D)=\frac{A(\partial D)}{V(D)^{1-1 / n}}
+		\end{equation}
+		\\\\
+		where D varies over bounded domains in $R^{n}$ having $C^{2}$ boundary.\\
+		Notations in this proof are used from the above theorem (\ref{t:3}) which are \\
+		following.
+		\\ 
+		We have $\phi_{t}$, 1-parameter family of diffeomorphism of $\mathbb{R}^{n}$, with corresponding time-dependent vector field $$\boldsymbol{X} = \boldsymbol{X}(x, t)$$ and at time zero, $\boldsymbol{X}$ is \\ $$\boldsymbol{\xi}(\boldsymbol{x})=\boldsymbol{X}(\boldsymbol{x}, \boldsymbol{0})$$ and  restricting $\boldsymbol{\xi}$ on its boundary, we have
+		\\      $$\boldsymbol{\eta}=\boldsymbol{\xi} | \Gamma $$ \\
+		As $\Omega$ is a solution to the  $C^{2}$ Isoperimetric problem, $\Omega$ will minimize the isoperimetric functional $J(D)$ so we have
+		
+		
+		$$\left.\frac{d}{d t} J\left(\Phi_{t}(\Omega)\right)\right|_{t=0} = 0 $$ \\ 
+		Now on differentiating $J(\Phi_{t}(\Omega))$ with respect to t,
+		we get \\\\
+		$$\left.\frac{d}{d t} J\left(\Phi_{t}(\Omega)\right)\right|_{t=0} =  -\frac{1}{V(\Omega)^{1-1 / n}} \int_{\Gamma} H \eta \cdot \mathbf{n} d A+\left(\frac{1}{n}-1\right) \frac{A(\Gamma)}{V(\Omega)^{2-1 / n}} \int_{\Gamma} \eta \cdot \mathbf{n} \hspace{6pt} d A 
+		$$ \\\\
+		which implies \\\\
+		\begin{equation}
+		\label{eq35.5}
+		-\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d A}{\int_{\Gamma} \eta \cdot \mathbf{n} d A} = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}
+		\end{equation}
+		
+		Now $\Omega$ has its $V(\Omega) = \omega_{n}$, we should have $A(\Gamma) \leq c_{n-1}$ since $\Omega $ is solution of Isoperimetric Problem \\
+		recall that \\ $$ \omega_{\mathbf{n}}=\frac{\mathbf{c}_{\mathbf{n}-1}}{n}$$ \\
+		together  implies \\\\
+		\begin{equation}
+		\label{eq36}
+		-\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d \boldsymbol{A}}{\int_{\Gamma} \boldsymbol{\eta} \cdot \mathbf{n} d \boldsymbol{A}} \leq \boldsymbol{n}-1 
+		\end{equation}
+		let $\phi$ be a non-negative $C^{\infty}$ function for any $w_{0} \in \Gamma,$ compactly supported on a neighborhood of $w_{0}$ in $\mathbb{R}^{n}$.
+		To simplify the above expression, we choose a particular vector field $X(x, t)$  \\
+		$$
+		X(x, t)=\phi(x) \mathbf{n}_{\omega_{0}}
+		$$
+		which is time-independent.
+		\\
+		and now picking $\phi$ with sufficiently small support about $w_{o}$ we get the left-hand side of expression (\ref{eq36}) to be 
+		
+		$ -H\left(w_{0}\right )$ \\
+		
+		and that finally gives
+		\\
+		$$ -H(w_{0})\leq n-1 $$ 
+		for any $ \omega_{0} \in \Gamma$ hence it is proved on all of $\Gamma$ 
+	\end{proof}
+	
+	As a corollary of the above theorem, we get that mean curvature  H is constant.    
+	
+	\begin{corollary}
+		\label{cor:1}
+		Assume that $\Omega$ is a solution to the $C^{2}$ Isoperimetric problem
+		with volume of $\Omega$ equal to that of the unit $(n)$ - disk in $\mathbb{R}^{n}$. Then mean curvature $H$ is constant which is
+		
+		$$ H = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}$$ 
+		\begin{proof}
+			
+			
+			To prove that $H$ is constant, we will be using same argument which was used in above proof to prove $-H \leq n-1$, \\ 
+			in following expression  (\ref{eq35.5})  
+			\begin{equation*}
+			-\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d A}{\int_{\Gamma} \eta \cdot \mathbf{n} d A} = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}
+			\end{equation*}
+			
+			So we repeat the same arguments again.\\
+			
+			Let $\phi$ be a non-negative $C^{\infty}$ function for any $w_{0} \in \Gamma,$ compactly supported on a neighborhood of $w_{0}$ in $\mathbb{R}^{n}$.
+			To simplify above expression,we choose a particular vector field $X(x, t),$  \\
+			$$
+			X(x, t)=- \phi(x) \mathbf{n}_{\omega_{0}}
 			$$
 			which is time-independent.
 			\\
-			and now picking $\phi$ with sufficiently small support about $w_{o}$ we get the left-hand side of expression (\ref{eq36}) to be 
-			
-			$ -H\left(w_{0}\right )$ \\
-			
-			and that finally gives
-			\\
-			$$ -H(w_{0})\leq n-1 $$ 
-			for any $ \omega_{0} \in \Gamma$ hence it is proved on all of $\Gamma$ 
-		\end{proof}
-		
-		As a corollary of the above theorem, we get that mean curvature  H is constant.    
-		
-		\begin{corollary}
-			\label{cor:1}
-			Assume that $\Omega$ is a solution to the $C^{2}$ Isoperimetric problem
-			with volume of $\Omega$ equal to that of the unit $(n)$ - disk in $\mathbb{R}^{n}$. Then mean curvature $H$ is constant which is
-			
-			$$ H = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}$$ 
-			\begin{proof}
-				
-				
-				To prove that $H$ is constant, we will be using same argument which was used in above proof to prove $-H \leq n-1$, \\ 
-				in following expression  (\ref{eq35.5})  
-				\begin{equation*}
-				-\frac{\int_{\Gamma} H \eta \cdot \mathbf{n} d A}{\int_{\Gamma} \eta \cdot \mathbf{n} d A} = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}
-				\end{equation*}
-				
-				So we repeat the same arguments again.\\
-				
-				Let $\phi$ be a non-negative $C^{\infty}$ function for any $w_{0} \in \Gamma,$ compactly supported on a neighborhood of $w_{0}$ in $\mathbb{R}^{n}$.
-				To simplify above expression,we choose a particular vector field $X(x, t),$  \\
-				$$
-				X(x, t)=- \phi(x) \mathbf{n}_{\omega_{0}}
-				$$
-				which is time-independent.
-				\\
-				and now picking $\phi$ with sufficiently small support about $w_{o}$ we get left hand side of expression (\ref{eq35.5}) to be $ H\left(w_{0}\right )$. \\
-				Hence expression (\ref{eq35.5}) becomes 
-				$$ H(w_{0}) = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}.$$ 
-				For any $\omega_{0} \in \Gamma$ it is true 
-				hence it is proved on all points of $\Gamma$.
-			\end{proof}        
-		\end{corollary} 
-		
-		
-		\hfill \break
-		
-		\textbf{Remark:} 
-		Assume that $\Omega$ is a solution to the $C^{2}$ Isoperimetric problem with volume of $\Omega$ equal to that of the unit $(n)$ - disk in $\mathbb{R}^{n}$. Then using above corollary (\ref{cor:1}) we get that mean curvature of $\Gamma$ is constant and then 
-		from theorem (\ref{t:3.5})    we  get that $\Omega$ will be an n- disk in $\mathbb{R}^n$.    
-		
-		
-		
-		
-		
-		
-		\hfill \break
-		
-		\begin{theorem}
-			\label{t:5}
-			Assume $\Omega$ is a bounded domain in $\mathbf{R}^{n}$, with $C^{2}$ boundary $\Gamma$
-			and $\mathbf{n}$, its exterior normal unit vector field along $\Gamma$. Assume the mean curvature
-			$H$ of $\Gamma$ satisfies
-			$$
-			-H \leq n-1
-			$$
-			along all of $\Gamma$. Then
-			$$
-			A(\Gamma) \geq \mathfrak{c}_{\mathfrak{n}-1}
-			$$
-			with equality iff $\Omega$ is a disk in $\mathbb{R}^{n}$ \\\\
-		\end{theorem}
-		
-		% \begin{proof} \ \textbf{Edit karna hai decide whether to write or not }\\
-		
-		%  Let $\Omega$ with its boundary,  $\bar{\Omega} =\Omega \cup \Gamma,$ and denote its convex hull  $\mathcal{C}$  and denote the boundary of $\mathcal{C}$  to $\Sigma=\partial \mathcal{C}$ 
-		
-		% Let $w \in \Sigma \backslash(\Sigma \cap \Gamma),$ T asupporting hyperplane of $\mathcal{C}$ at $w$. (See Figure II. $1.1 .$ ) Then there exists an $x \in \Pi \cap(\Sigma \cap \Gamma)$ (if not, then $\mathcal{C}$ would not be the smallest convex set containing $\bar{\Omega}$ ), which implies (a) $\Pi$ is the tangent hyperplane to $\Gamma$
-		% at $x,$ and $(b)$ the line segment $w x$ is contained in $\Pi$. These two imply that $\Pi$ is the unique supporting hyperplane to $\mathcal{C}$ at every point of $u x,$ except possibly at
-		% w. If $\Pi$ were not the unique supporting hyperplane of $\mathcal{C}$ at $w$, then $\Sigma$ would have a conical singularity at $w,$ which would imply that $\mathcal{C}$ is not the minimal convex set containing $\bar{\Omega}$. Therefore, every point of $\Sigma$ has a unique supporting hyperplane, that is, $\boldsymbol{\Sigma}$ is everywhere differentiable.
-		% \end{proof}
-		
-		
-		\begin{theorem}
-			\label{t:5.5}
-			Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$ with $C^{2}$ boundary that is an extremal of the $C^{2}$ Isoperimetric functional. Then  $\partial \Omega$ has constant mean curvature.
-		\end{theorem}
+			and now picking $\phi$ with sufficiently small support about $w_{o}$ we get left hand side of expression (\ref{eq35.5}) to be $ H\left(w_{0}\right )$. \\
+			Hence expression (\ref{eq35.5}) becomes 
+			$$ H(w_{0}) = \frac{n-1}{n} \frac{A(\Gamma)}{V(\Omega)}.$$ 
+			For any $\omega_{0} \in \Gamma$ it is true 
+			hence it is proved on all points of $\Gamma$.
+		\end{proof}        
+	\end{corollary} 
+	
+	
+	\hfill \break
+	
+	\textbf{Remark:} 
+	Assume that $\Omega$ is a solution to the $C^{2}$ Isoperimetric problem with volume of $\Omega$ equal to that of the unit $(n)$ - disk in $\mathbb{R}^{n}$. Then using above corollary (\ref{cor:1}) we get that mean curvature of $\Gamma$ is constant and then 
+	from theorem (\ref{t:3.5})    we  get that $\Omega$ will be an n- disk in $\mathbb{R}^n$.    
+	
+	
+	
+	
+	
+	
+	\hfill \break
+	
+	\begin{theorem}
+		\label{t:5}
+		Assume $\Omega$ is a bounded domain in $\mathbf{R}^{n}$, with $C^{2}$ boundary $\Gamma$
+		and $\mathbf{n}$, its exterior normal unit vector field along $\Gamma$. Assume the mean curvature
+		$H$ of $\Gamma$ satisfies
+		$$
+		-H \leq n-1
+		$$
+		along all of $\Gamma$. Then
+		$$
+		A(\Gamma) \geq \mathfrak{c}_{\mathfrak{n}-1}
+		$$
+		with equality iff $\Omega$ is a disk in $\mathbb{R}^{n}$ \\\\
+	\end{theorem}
+	
+	% \begin{proof} \ \textbf{Edit karna hai decide whether to write or not }\\
+	
+	%  Let $\Omega$ with its boundary,  $\bar{\Omega} =\Omega \cup \Gamma,$ and denote its convex hull  $\mathcal{C}$  and denote the boundary of $\mathcal{C}$  to $\Sigma=\partial \mathcal{C}$ 
+	
+	% Let $w \in \Sigma \backslash(\Sigma \cap \Gamma),$ T asupporting hyperplane of $\mathcal{C}$ at $w$. (See Figure II. $1.1 .$ ) Then there exists an $x \in \Pi \cap(\Sigma \cap \Gamma)$ (if not, then $\mathcal{C}$ would not be the smallest convex set containing $\bar{\Omega}$ ), which implies (a) $\Pi$ is the tangent hyperplane to $\Gamma$
+	% at $x,$ and $(b)$ the line segment $w x$ is contained in $\Pi$. These two imply that $\Pi$ is the unique supporting hyperplane to $\mathcal{C}$ at every point of $u x,$ except possibly at
+	% w. If $\Pi$ were not the unique supporting hyperplane of $\mathcal{C}$ at $w$, then $\Sigma$ would have a conical singularity at $w,$ which would imply that $\mathcal{C}$ is not the minimal convex set containing $\bar{\Omega}$. Therefore, every point of $\Sigma$ has a unique supporting hyperplane, that is, $\boldsymbol{\Sigma}$ is everywhere differentiable.
+	% \end{proof}
+	
+	
+	\begin{theorem}
+		\label{t:5.5}
+		Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$ with $C^{2}$ boundary that is an extremal of the $C^{2}$ Isoperimetric functional. Then  $\partial \Omega$ has constant mean curvature.
+	\end{theorem}
+	
+	
+	
+	
+	
+	
+	
+	\begin{proof} 
 		
 		
 		
+		We denote 
+		$\phi = \eta\cdot{n}$,
+		as $\Omega$ is an extremal for the Isoperimetric functional, so for any vector field $X$ for which
+		\[
+		V\left(\Phi_{t}(\Omega)\right)=\text { const. } \quad \forall \text{ t}
+		\]
+		
+		From first part( \ref{eq23}) of the above theorem (\ref{t:3}) \\ 
+		
+		$$\int_{\Gamma} \phi d A=0$$
 		
 		
+		and from second part (\ref{eq24}) of above theorem (\ref{t:3})
+		$$\int_{\Gamma} \phi H d A=0$$
 		
+		Thus we have \\
 		
-		\begin{proof} 
-			
-			
-			
-			We denote 
-			$\phi = \eta\cdot{n}$,
-			as $\Omega$ is an extremal for the Isoperimetric functional, so for any vector field $X$ for which
-			\[
-			V\left(\Phi_{t}(\Omega)\right)=\text { const. } \quad \forall \text{ t}
-			\]
-			
-			From first part( \ref{eq23}) of the above theorem (\ref{t:3}) \\ 
-			
-			$$\int_{\Gamma} \phi d A=0$$
-			
-			
-			and from second part (\ref{eq24}) of above theorem (\ref{t:3})
-			$$\int_{\Gamma} \phi H d A=0$$
-			
-			Thus we have \\
-			
-			\begin{center}
-				$ \int_{\Gamma} \phi H d A=0 \hspace{4pt} \forall  \hspace{4pt}\phi \text { such that } \int_{\Gamma} \phi d A=0$ \\ 
-			\end{center}
-			from here it implies that H is a constant 
-		\end{proof}
-		
-		
-		\textbf{Remark: }Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$ with $C^{2}$ boundary that is an extremal of the $C^{2}$ Isoperimetric functional.\\
-		Then
-		From above theorem (\ref{t:5.5}) we get that mean curvature $H$ is constant and further from theorem (\ref{t:3.5})    we get that $\Omega$ will be an n-disk in $\mathbb{R}^n$.
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-	    \chapter{Isoperimetric Inequality in Convex Subsets of $\mathbf{R}^{n}$ }
+		\begin{center}
+			$ \int_{\Gamma} \phi H d A=0 \hspace{4pt} \forall  \hspace{4pt}\phi \text { such that } \int_{\Gamma} \phi d A=0$ \\ 
+		\end{center}
+		from here it implies that H is a constant 
+	\end{proof}
+	
+	
+	\textbf{Remark: }Let $\Omega$ be a bounded domain in $\mathbb{R}^{n}$ with $C^{2}$ boundary that is an extremal of the $C^{2}$ Isoperimetric functional.\\
+	Then
+	From above theorem (\ref{t:5.5}) we get that mean curvature $H$ is constant and further from theorem (\ref{t:3.5})    we get that $\Omega$ will be an n-disk in $\mathbb{R}^n$.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\chapter{Isoperimetric Inequality in Convex Subsets of $\mathbf{R}^{n}$ }
 	
 	\label{chap:c4}
 	%need to edit here and explain things properly
@@ -1841,13 +1841,13 @@
 			\textbf{(i)}  $ \mathbf{B} \subset \mathbf{\operatorname{conv} A}  $\\\\
 			For any arbitrary convex set $C \supset A$, on considering previous Theorem (\ref{t:4.5}) for convex set C, all convex combinations of points in C should lie in C so all convex combinations of points of A (subset of  C) will definitely lie inside C. \\ 
 			So we would have $B\subset C $ for all such C, and now since  $\operatorname{conv} A $ is an intersection of all such convex sets like C  which contains A, we will have  $ B \subset \operatorname{conv} A.  $  
-		
+			
 			\newpage
 			\textbf{(ii)}  $ \mathbf{B} \supset \mathbf{\operatorname{conv} A}  $\\\\
 			We claim that B is convex set \\
 			
 			\textbf{Proof of the Claim-}
-		For any two elements
+			For any two elements
 			$$\alpha_{1} x_{1}+\cdots+\alpha_{k} x_{k} \text{ and }  \gamma_{1} y_{1}+\cdots+\gamma_{m} y_{m}  \text{ of } B $$ 
 			we have                 
 			\begin{multline}
@@ -1860,8 +1860,8 @@
 			$$
 			\beta \alpha_{1}+\ldots+\beta \alpha_{k}+(1-\beta) \gamma_{1}+\cdots+(1-\beta) \gamma_{m}=\beta+(1-\beta)=1
 			$$
-		Hence B is a convex set.\\
-		
+			Hence B is a convex set.\\
+			
 			Now since $ B \supset A $ and B is convex set and $\operatorname{conv} A $ is smallest convex set containing A, so
 			
 			we have  $ \mathbf{B} \supset \mathbf{\operatorname{conv} A}  $ \par
@@ -2951,66 +2951,70 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	\chapter{Isoperimetric Inequality for Graph}
 	\label{chap:c5}
 	\section{Introduction}
 	\label{s:5}
 	
-	Isoperimetric inequality for a Graph G is defined in a similar way as defined in $\mathbb{R}^n$. It involves finding a subset of the Vertex set V(G) of G among all subsets of fixed size, which has the smallest edge-boundary. These subsets are called Isoperimetric Sets. Further  Isoperimetric Sets are given for some trivial and non-trivial classes of the graph. \par 
-	From paper [\ref{bib:4}], Isoperimetric number $i(G)$ and $i_k{G}$ are defined, and some basic properties of $i(G)$  are discussed. Then the main theorem  is proved from section 6 which uses theorem from section 4 regarding lower bound for $i_k{G}$ and for i(G) in terms of the second eigenvalue of difference Laplacian matrix D and uses theorem regarding bounding expectation of the second eigenvalue of the random 2k-regular graph from different paper [\ref{bib:5}]. For proof of this theorem from [\ref{bib:5}], some results are used without proof from paper [\ref{bib:6}] and [\ref{bib:7}].
 	
+	
+	
+	
+	
+	
+	
+	Isoperimetric inequality for a Graph G is defined similar to how this are defined for $\mathbb{R}^n$. It involves finding smallest edgs-boundary subgraph among all subgraphs with a given size, which are called Isoperimetric sets. Further Isoperimetric sets are given for some trivial and non-trivial classes of the graph. \par 
+%	From paper [\ref{bib:4}], Isoperimetric number $i(G)$ and $i_k{G}$ are defined, and some basic properties of $i(G)$ are discussed. Then the main theorem is proved from section 6 which uses theorem from section 4 regarding lower bound for $i_k{G}$ and for \(i(G)\) in terms of the second eigenvalue of difference Laplacian matrix D and uses theorem regarding bounding expectation of the second eigenvalue of the random 2k-regular graph from a different paper [\ref{bib:5}]. For proof of this theorem from [\ref{bib:5}], some results are used without proof from paper [\ref{bib:6}] and [\ref{bib:7}].\pdfcomment{Remove references to sections}
+%	
 	\hfill \break
 	
 	
 	\subsection{Isoperimetric Inequality for Graph G}
-	For a graph G with vertex set V and edge set E, Isoperimetric Inequality is to find a function $\mathcal{F}$, called best  Isoperimetric function such that  \begin{center}
-		$|\partial \Omega| \geq \mathcal{F}(|\Omega|)$  
-	\end{center}   
-	for every non empty subset $\Omega$ of vertices set V, where $\partial \Omega$ is the boundary of $\Omega$  and defined as the set of edges of the graph connecting vertices of $\Omega$ with vertices of its complement $\bar{\Omega} = V \backslash \Omega $ and $\mathcal{F}$ is defined as  \begin{center}
-		$\mathscr{F}(k)=\min _{|\Omega|=k}|\partial \Omega|$\par
-	\end{center} 
-	Best Isoperimetric function or corresponding Sharp Isoperimetric Inequality is known only for few classes of graph e.g.
-	from combinatorial arguments 
-	\par
+	\begin{mydef}{\textbf{Edge boundary\( (\partial \Omega): \)}}
+		For a graph \( G = (V,E) \) with \( \Omega \subset V \), edge boundary \( \partial \Omega \subset E \) is defined as the subset of edges connecting vertices of $\Omega$ with vertices of its complement $\bar{\Omega} = V \backslash \Omega $.\\
+		 Number of edges in $\partial \Omega $ i.e.$ | \partial \Omega | $ is called length of edge boundary for edge boundary   $\partial \Omega $.
+	\end{mydef}
+	
+	\begin{mydef}{\textbf{Isoperimetric inequality:}}
+		For a graph \( G = (V,E) \), Isoperimetric Inequality is the problem of finding a function $\mathcal{F}$, such that
+		\begin{equation*}
+		\forall \Omega \subset V, \quad \Omega \neq \emptyset, \quad  |\partial \Omega| \geq \mathcal{F}(|\Omega|)
+		\end{equation*}
+	\end{mydef}
+	
+	\begin{mydef}{\textbf{Best isoperimetric function:}}
+		These are functions for which isoperimetric inequality is sharp. Mathematically
+		\begin{equation*}
+		\mathcal{F}(k)=\min _{|\Omega|=k}|\partial \Omega|
+		\end{equation*}
+	\end{mydef}
+	Using combinatorial technique, best isoperimetric function or corresponding sharp isoperimetric inequality are known only for few classes of graph.For some trivial graphs it is following.
+	
 	\begin{itemize}
-		\item For The complete graph $K_{n}$ inequality is $|\partial \Omega|=(n-|\Omega|) | \Omega|$ 
-		\item For The cycle $C_{n}$ it is  $|\partial \Omega|\geq 2$ for $|\Omega| \neq n$.
-		\item For The infinite d-regular tree it is $|\partial \Omega| \geq(d-2)| \Omega|+2$\par
+		\item For the complete graph $K_{n}$ inequality generates to $|\partial \Omega|=(n-|\Omega|) | \Omega|$ 
+		which is infact equality case
+		\item For the cycle $C_{n}$ it is  $|\partial \Omega|\geq 2$ for $|\Omega| \neq n$.
+		\item For the infinite d-regular tree it is $|\partial \Omega| \geq(d-2)| \Omega|+2$\par
 	\end{itemize}
 	
 	
 	
-	Other Non-trivial classes for which it is known are some families of Cartesian products of graphs. like 
+	
+	
+	
+	
+	
+	
+	
+	
+	\hfill \break
+	
+	Other non-trivial classes for which it is known are some families of Cartesian products of graphs for e.g. 
 	n-cube $Q_{n}$, 
 	grid $[k]^{n}$,
 	and lattice $\mathbb{Z}^{n}$.
 	\par
-	Apart from these combinatorial techniques There are eigenvalue techniques which give good Isoperimetric Inequality in general \\\\
+	Apart from these combinatorial techniques there are eigenvalue techniques which give good Isoperimetric Inequality in general \\\\
 	
 	Using eigenvalue techniques, 
 	Isoperimetric inequality for a d-regular graph in terms of second eigenvalue $\lambda_2$\ is following. \par
